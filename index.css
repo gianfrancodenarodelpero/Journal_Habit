@@ -12,6 +12,14 @@
 html {
   height: 100%;
 }
+h1{font-size: 3.5em; text-align: center;
+  }
+h2{font-size: 2.7em; text-align: center;
+  }
+h3{font-size: 2em; text-align: center;
+  }
+p{font-size: 1.25em; text-align: center;
+  }
 
 body {
   font-family: "Public Sans", sans-serif;
@@ -35,7 +43,8 @@ body {
 
 .main {
   grid-area: main;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
+  color: white;
   font-family: Arial;
   background-image: url('fondo.jpg');
   background-size: cover;
@@ -130,4 +139,66 @@ body {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 20px;
+}
+
+/*Contacto*/
+
+/* SECCION CONTACTO */
+.contacto{
+    
+  
+  color: #ffffff;
+  padding: 25px 0;
+  border: 2px solid black;
+}
+.contacto .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.contacto h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 10px ;
+}
+
+.contacto .col input, .contacto .col textarea{
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  color: #000000;
+  font-size: 18px;
+}
+.contacto button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #000000;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+.contacto button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1CB698;
+  z-index: -1;
+  transition: 1s;
+}
+.contacto button:hover .overlay{
+  width: 100%;
 }
